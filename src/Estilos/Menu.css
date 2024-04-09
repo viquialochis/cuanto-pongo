@@ -1,0 +1,26 @@
+@import '../SCSS/custom.css';
+
+
+.navbar-item{
+  background-color: #67a381;
+}
+
+.cuanto-pongo{
+  color: #67a381;
+  text-decoration: none;
+}
+
+.btn-nav {
+  border: 2px solid rgb(58, 117, 68);
+  color: rgb(58, 117, 68) ;
+}
+
+.btn-nav.active {
+  border: rgb(223, 219, 32) !important;
+}
+
+
+
+
+
+

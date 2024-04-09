@@ -1,0 +1,16 @@
+@import '../SCSS/custom.css';
+
+
+.texto-informacion {
+    color: black;
+    font-weight: bold;
+}
+
+.texto-link {
+    color: black;
+}
+
+.mt-footer {
+    margin-top: 5rem; /* Ajusta este valor según sea necesario */
+  }
+  
