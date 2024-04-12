@@ -6,7 +6,7 @@ export default function Menu() {
     return (
         <nav className="container-fluid shadow navbar navbar-expand-xxxl text-white py-0 " style={{position:"sticky", top:"0", zIndex:4, backgroundColor: "#d7eede"}}>
             <span className="text-primary ms-4 fw-bold fs-3">
-                <NavLink className="cuanto-pongo " to="/home/">
+                <NavLink className="cuanto-pongo " to="/cuanto-pongo">
                     <img className="img-fluid " src={imagen} alt="imagen de ejemplo" style={{width:"90px"}} />
                     Cuanto Pongo?
                 </NavLink>
@@ -14,7 +14,7 @@ export default function Menu() {
             <div className="ms-auto me-4 my-2 ">
                 <ul className="navbar-nav">
                     <li className="py-0 ">
-                        <NavLink className="btn btn-nav" to="/ayuda/">
+                        <NavLink className="btn btn-nav" to="/cuanto-pongo/ayuda">
                             Ayuda
                         </NavLink>
                     </li>

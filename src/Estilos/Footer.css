@@ -4,13 +4,23 @@
 .texto-informacion {
     color: black;
     font-weight: bold;
+    font-size: 1rem;
+}
+.texto{
+    font-size: 1.1rem;
 }
 
 .texto-link {
     color: black;
 }
 
-.mt-footer {
-    margin-top: 5rem; /* Ajusta este valor según sea necesario */
+
+.espaciado {
+    margin-right: 1rem; 
   }
   
+@media (max-width: 768px) {
+.espaciado {
+    margin-right: 0.5rem;
+}
+}

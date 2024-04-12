@@ -127,13 +127,8 @@ function CalculadorGastos() {
             </div>
           ))}
 
-          <p className="text-center">
-            Gasto total: ${totalMonto.toFixed(2)}
-            <br />
-            Cada uno: ${promedio.toFixed(2)}
-          </p>
-
-          <div className="d-flex justify-content-center mb-3">
+          
+          <div className="d-flex justify-content-center mb-3" style={{}}>
             <button className="btn btn-primary mx-2" onClick={handleAddParticipante}>Agregar</button>
             <button className="btn btn-primary mx-2" onClick={handleLimpiar}>Limpiar</button>
           </div>
@@ -142,13 +137,20 @@ function CalculadorGastos() {
             <button className="btn btn-success" onClick={handleCalculate}>Calcular</button>
           </div>
 
+          <p className="text-center my-4">
+            Gasto total: ${totalMonto.toFixed(2)}
+            <br />
+            Cada uno: ${promedio.toFixed(2)}
+          </p>
+
+
           {resultado.length > 0 && (
-            <div>
-              <h3>Detalle de Pagos:</h3>
-              <ul>
+            <div className='d-flex  flex-column align-items-center'>
+              <p style={{ fontSize: '20px' , fontWeight: 'bold'}}>DETALLES DE PAGO</p>
+              <ul style={{paddingLeft: '15px'}}>
                 {resultado.map((transaccion, index) => (
                   <li key={index}>
-                    {transaccion.deudor} {transaccion.cantidad > 0 ? "debe pagar" : "recibe"} ${Math.abs(transaccion.cantidad).toFixed(2)} a {transaccion.acreedor}
+                    {transaccion.deudor.charAt(0).toUpperCase() + transaccion.deudor.slice(1).toLowerCase()} {transaccion.cantidad > 0 ? "debe pagar" : "recibe"} ${Math.abs(transaccion.cantidad).toFixed(2)} a {transaccion.acreedor.charAt(0).toUpperCase() + transaccion.acreedor.slice(1).toLowerCase()}
                   </li>
                 ))}
               </ul>

@@ -1,6 +1,6 @@
 
 
-export default function Faq() {
+export default function Ayuda() {
     return (
       <main className=''>
         <div className="container-fluid">
@@ -8,60 +8,41 @@ export default function Faq() {
             <div className="col-lg-6 mx-auto my-5">
               <h2>Cómo utilizar la página</h2>
   
-              <div className="accordion" id="accordionExample">
+              <div className="accordion" id="accordionExample" >
                 <div className="accordion-item">
                   <h2 className="accordion-header">
-                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Paso #1
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                      Instrucciones
                     </button>
                   </h2>
                   <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div className="accordion-body ">
-                      <p>En el primer paso, desde la página de inicio debe de pulsar <strong><code>Adelante</code></strong> para poder repartir los gastos. Cuando le pregunte <strong><code>¿Cuántos son?</code></strong> deberá ingresar el número correcto usando los botones con <strong><code>+</code></strong> y <strong><code>-</code></strong>. Deberá ingresar cuántas personas se vieron beneficiadas del servicio.</p>
-                      <p>Si hay alguna persona que no pueda pagar por motivos como el ser de muy joven edad, se pueden tomar dos caminos:</p>
-                      <ul>
-                        <li>
-                          Se lo puede no contar en el cálculo, repartiendo su parte entre todos.
-                        </li>
-                        <li>
-                          Se lo puede contar en el cálculo, haciendo que su tutor se encargue de los gastos a su nombre.
-                        </li>
-                      </ul>
-                      <p>Finalmente hacer click en <strong><code>Adelante</code></strong> otra vez</p>
+                    <p>¡Hola amigo! Para empezar a usar nuestra increíble aplicación de repartición de gastos, simplemente sigue estos sencillos pasos:</p>
+                    <p>Desde la página de inicio, solo tienes que darle un toque al botón <strong><code>CALCULAR</code></strong> y así podrás empezar a repartir los gastos. Luego, solo necesitas ingresar el nombre y la cantidad de dinero que aportó cada participante (de ser necesario). Cuando hayas ingresado todos los datos, solo pulsa <strong><code>Calcular</code></strong> para ver los resultados finales y descubrir quién le debe a quién.</p>
+                    <p>Si necesitas agregar más participantes, ¡no hay problema! Solo tienes que hacer clic en el botón <strong><code>Agregar</code></strong> y se añadirán más celdas para que todos puedan sumar al gasto total.</p>
+                    <p>Pero espera, ¿qué pasa si te emocionas y agregas un registro de más? ¡No te preocupes! Puedes dejarlo vacío o eliminarlo con un simple toque en el botón rojo <strong><code>❌</code></strong>.</p>
+                    <p>Y si en algún momento quieres empezar de cero y limpiar todos los registros, solo tienes que presionar el botón <strong><code>limpiar</code></strong> y ¡voilà! Todo estará como al principio.</p>
+                     
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Paso #2
+                      Datos en pantalla
                     </button>
                   </h2>
                   <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      <p>En el segundo paso vamos a cargar los nombres y el dinero aportado por cada una de las personas. Podremos ir de una persona a otra con <strong><code>Volver</code></strong> y <strong><code>Siguiente persona</code></strong>. Tendremos una tabla que nos mostrará el progreso que hayamos hecho, con la persona actual resaltada en naranja.</p>
-                      <p><span className="text-warning fw-bold">Advertencia: </span>No podremos avanzar entre personas si colocamos un nombre repetido o uno vacío. Se puede modificar la persona actual o volver atrás para corregir el nombre de otra persona.</p>
-                      <p>Si ya llenamos todos los datos pero nos olvidamos de una persona, no hay problema, podemos añadir otra persona con el botón <strong><code>Añadir otra persona</code></strong>, así como tambien podremos quitar una persona si es que contamos mal.</p>
-                      <p>Cuando ya no haya más personas por añadir, podremos hacer click en <code><strong>Finalizar</strong></code>.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Paso #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      <p>Este es el último paso y el más sencillo. Aparecerá una tabla y un botón a clickear: <strong><code>Generar pagos</code></strong>. Se desplegará una lista de pagos a realizar con origen, destino y monto.</p>
-                      <p>Opcionalmente podremos descargar el detalle en PDF con <strong><code>Descargar PDF</code></strong>.</p>
+                      <p>Debajo de los botones se encuenta  <strong><code>Gasto total</code></strong> vas a podes ver, adivina, el total puesto por los participantes y debajo, en <strong><code>Por persona</code></strong>, lo que debe aportar cada uno de los participantes.</p>
+                      <p>En <strong><code>Detalle de Pago</code></strong> vas a visualizar quien debe saldar deudas con quien para simplificar los calculos ;).</p>
+                    
                     </div>
                   </div>
                 </div>
               </div>
   
-              <p className="h2">Sobre la página</p>
+              <p className="h2 mt-2">Sobre la página</p>
               <div className="accordion" id="accordionExample2">
                 <div className="accordion-item">
                   <h2 className="accordion-header">
@@ -86,18 +67,7 @@ export default function Faq() {
                     </div>
                   </div>
                 </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      Acceso al código
-                    </button>
-                  </h2>
-                  <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                    <div className="accordion-body">
-                      <p>Lo encontrarás <a href="https://github.com/juan-lien-do/repartir" target="_blank">aquí</a>. Se reciben contribuciones.</p>
-                    </div>
-                  </div>
-                </div>
+                
                 
               </div>
             </div>
